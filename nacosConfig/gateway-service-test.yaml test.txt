@@ -1,0 +1,11 @@
+server:
+  port: 80
+knife4j:
+  gateway:
+    enabled: true
+    strategy: discover
+    discover:
+      enabled: true
+      version: openapi3
+      excluded-services:
+        - ${spring.application.name}
